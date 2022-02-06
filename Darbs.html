@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Karjera || VAS "Latvijas Pasts"</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <nav class="datums">
+    <script src="datums.js"></script>
+    <script src="DatumsVardiem.js"></script>
+  </nav>
+  <body>
+    <p class="virsrakstsh2"> <i> <b>CURRICULUM VITAE
+      <br> IESNIEGŠANAS FORMA</b></i></p>
+    <p class="virsrakstsh2"> <i>Lūdzu norādiet nepieciešamo informāciju! </i> </p>
+
+    <form id="formaDarbs">
+      <p> <b> DARBA PIEREDZE</b> </p>
+      <br>
+      <label for="name"> Darba vieta:</label> <br> <!-- Lauka nosaukums -->
+      <input type="text" id="name" name="name" placeholder="darba vietas nosaukums" autocomplete="off" required >
+      <br>
+      <br>
+      <label for="name"> Amats:</label> <!-- Lauka nosaukums -->
+      <br>
+      <input type="text" id="name" name="name" placeholder="amata nosaukums"  autocomplete="off" required>
+
+      <br>
+      <br>
+      <label for="izvele"> Slodzes apmērs: </label><br>
+      <select name="izvele" id="izvele">
+        <!-- Izvēles elementu grupēšana -->
+        <optgroup label="Izvēlēties">
+          <!-- Izvēles elementi/varianti -->
+          <option value="nav norādīts"> [nav norādīts] </option>
+          <option value="sezonals"> sezonāli </option>
+          <option value="pusslodze"> pusslodze </option>
+          <option value="pilna slodze"> pilna slodze </option>
+        </optgroup>
+        </select>
+
+        <br> <br>
+        <label for="text">Darba stāžs - darbvietā pavadītais laiks:</label> <!-- Lauka nosaukums -->
+        <br>
+      <!--Datuma un laika ievade -->
+      <label for="date">no:</label> 
+      <input type="date" id="date" name="date">
+      <label for="date">līdz:</label> 
+      <input type="date" id="date" name="date">
+      <br><br>
+      <input type="submit" value="Saglabāt" class="starppoga">
+    </form>
+
+    <div>
+      <p>Pievienot dokumentu:</p>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+          
+        </form>
+    </div>
+    <p> <button onclick="PievienoPieredzi1()"> + Pievienot darba pieredzi</button> </p> <script src="PievienotDarbu1.js"></script>
+          <div id="darbs1" value="darbs1">
+            <form id="darbaPieredze1">
+              <label for="name"> Darba vieta:</label> <br> <!-- Lauka nosaukums -->
+              <input type="text" id="name" name="name" placeholder="darba vietas nosaukums" autocomplete="off" required >
+              <br>
+              <br>
+              <label for="name"> Amats:</label> <!-- Lauka nosaukums -->
+              <br>
+              <input type="text" id="name" name="name" placeholder="amata nosaukums"  autocomplete="off" required>
+
+              <br>
+              <br>
+              <label for="izvele"> Slodzes apmērs: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="sezonals"> sezonāli </option>
+                  <option value="pusslodze"> pusslodze </option>
+                  <option value="pilna slodze"> pilna slodze </option>
+                </optgroup>
+                </select>
+
+                <br> <br>
+                <label for="text">Darba stāžs - darbvietā pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+              <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+            </form>
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <p>Pievienot dokumentu:</p>
+                    
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" name="submit" value="Augšupielādēt">
+                    
+                    <!-- formas iztīrīšana ar HTML5 -->
+                    <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                  
+              </form>
+          </div>
+          <p> <button onclick="PievienoPieredzi2()"> + Pievienot darba pieredzi</button> </p> <script src="PievienotDarbu2.js"></script>
+          <div id="darbs2" value="darbs2">
+            <form id="darbaPieredze2">
+              <label for="name"> Darba vieta:</label> <br> <!-- Lauka nosaukums -->
+              <input type="text" id="name" name="name" placeholder="darba vietas nosaukums" autocomplete="off" required >
+              <br>
+              <br>
+              <label for="name"> Amats:</label> <!-- Lauka nosaukums -->
+              <br>
+              <input type="text" id="name" name="name" placeholder="amata nosaukums"  autocomplete="off" required>
+              <br>
+              <br>
+              <label for="izvele"> Slodzes apmērs: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="sezonals"> sezonāli </option>
+                  <option value="pusslodze"> pusslodze </option>
+                  <option value="pilna slodze"> pilna slodze </option>
+                </optgroup>
+                </select>
+                <br> <br>
+                <label for="text">Darba stāžs - darbvietā pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+              <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+            </form>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <p> Pievienot dokumentu:</p>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" name="submit" value="Augšupielādēt">
+                    
+                    <!-- formas iztīrīšana ar HTML5 -->
+                    <input type="reset" value="Nodzēst pielikumu (HTML5)">
+              </form>
+          </div>
+          <p> <button onclick="PievienoPieredzi3()"> + Pievienot darba pieredzi</button> </p> <script src="PievienotDarbu3.js"></script>
+          <div id="darbs3" value="darbs3">
+            <form id="darbaPieredze3">
+              <label for="name"> Darba vieta:</label> <br> <!-- Lauka nosaukums -->
+              <input type="text" id="name" name="name" placeholder="darba vietas nosaukums" autocomplete="off" required >
+              <br>
+              <br>
+              <label for="name"> Amats:</label> <!-- Lauka nosaukums -->
+              <br>
+              <input type="text" id="name" name="name" placeholder="amata nosaukums"  autocomplete="off" required>
+              <br>
+              <br>
+              <label for="izvele"> Slodzes apmērs: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="sezonals"> sezonāli </option>
+                  <option value="pusslodze"> pusslodze </option>
+                  <option value="pilna slodze"> pilna slodze </option>
+                </optgroup>
+                </select>
+                <br> <br>
+                <label for="text">Darba stāžs - darbvietā pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+              <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+            </form>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <p>Pievienot dokumentu: </p>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" name="submit" value="Augšupielādēt">
+                    <!-- formas iztīrīšana ar HTML5 -->
+                    <input type="reset" value="Nodzēst pielikumu (HTML5)">
+              </form>
+          </div>
+    <br>
+    <a class="pogaatpakal" href="Izglitiba.html" target="_blanc"> Atpakaļ </a>
+    <a class="pogatalak" href="SertifikatiLicences.html" target="_blanc"> Tālāk </a>
+    <br>
+    <br>
+    <footer>
+      <p>
+      <div>
+      <p>
+        <img src="LatvijasPastsLogo.png" class="LatvijasPastsLogo" width="200px" title="&copy VAS Latvijas Pasts">
+        </div>       
+    </p>
+    <p class="PastsAdrese"> VAS "Latvijas Pasts"
+      <br> Ziemeļu iela 10, Lidosta Rīga, Mārupes novads, LV-1000, Latvija
+    </p>
+    </footer>
+    <footer>
+      <p>Mājaslapas izstrāde:
+        <a href="https://www.linkedin.com/in/jurgis-sterns-240453184/" target ="_new">Jurgis Sterns</a>
+      </p>
+    </footer>
+  </body>
+</html>

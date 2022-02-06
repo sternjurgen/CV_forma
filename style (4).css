@@ -1,0 +1,150 @@
+body  { 
+  width: 80% !important; /*vēlamais lapas platums */
+  width: 200px; /* minimālais platums*/
+  max-width: 900px;
+  margin: auto;
+  background: whitesmoke ;
+  }
+
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  text-align: center;
+  text-size: 20px ;
+
+}
+  
+
+nav, footer {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+
+
+a.pogacv {
+  background-color: goldenrod ;
+  color: black;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 25px 25px 25px 25px; 
+  width: 160px;
+  height: 30px;
+  font-size: 20px;
+
+}
+
+a.pogacv:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+a.pogaatpakal {
+  background-color: goldenrod ;
+  color: black;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 25px 25px 25px 25px; 
+  width: 50px;
+  height: 15px;
+  font-size: 15px;
+
+}
+
+a.pogaatpakal:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+a.pogatalak {
+  background-color: goldenrod ;
+  color: black;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 25px 25px 25px 25px; 
+  width: 50px;
+  height: 15px;
+  font-size: 15px;
+
+}
+
+a.pogatalak:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+button {
+  background-color: goldenrod;
+  border-radius: 10px 10px 10px 10px;
+  
+
+}
+
+button:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+
+}
+
+
+
+input.pogaIesniegt {
+  background-color: goldenrod ;
+  color: black;
+  padding: 14px 25px;
+  display: inline-block;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 25px 25px 25px 25px; 
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  
+
+}
+
+input.pogaIesniegt:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+
+}
+
+input.starppoga {
+  background-color: goldenrod;
+  border-radius: 10px 10px 10px 10px;
+  
+
+}
+
+input.starppoga:hover {
+  background-color: #21618C;
+  color: white;
+  transition: all 0.7s;
+  cursor: pointer;
+
+}
+
+
+
+p.PastsAdrese {
+  font-size: 12px;
+
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Karjera || VAS "Latvijas Pasts"</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <nav class="datums">
+    <script src="datums.js"></script>
+    <script src="DatumsVardiem.js"></script>
+  </nav>
+  <body>
+    <p class="virsrakstsh2"> <i> <b>CURRICULUM VITAE
+      <br> IESNIEGŠANAS FORMA</b></i></p>
+    <p class="virsrakstsh2"> <i>Lūdzu norādiet nepieciešamo informāciju! </i> </p>
+
+
+    <p> <b> PRASMES UN SASNIEGUMI</b> </p>
+
+      <p><b>Licences un sertifikāti</b></p>
+      <div id="AutoVaditajs" value="aplieciba"> <i> Transportlīdzekļa vadītāja apliecība: </i>
+        <form id="FormaAplieciba">
+          <br>
+          <input type="checkbox" id="autokategorija"> AM 
+          <input type="checkbox" id="autokategorija"> A1 
+          <input type="checkbox" id="autokategorija"> A2 
+          <input type="checkbox" id="autokategorija"> A 
+          <input type="checkbox" id="autokategorija"> B1 
+          <input type="checkbox" id="autokategorija"> B 
+          <input type="checkbox" id="autokategorija"> C1 
+          <input type="checkbox" id="autokategorija"> C 
+          <input type="checkbox" id="autokategorija"> D1 
+          <input type="checkbox" id="autokategorija"> D <br>
+          <input type="checkbox" id="autokategorija"> BE 
+          <input type="checkbox" id="autokategorija"> C1E 
+          <input type="checkbox" id="autokategorija"> CE 
+          <input type="checkbox" id="autokategorija"> D1E 
+          <input type="checkbox" id="autokategorija"> DE 
+          <input type="checkbox" id="autokategorija"> TRAM 
+          <input type="checkbox" id="autokategorija"> TROL <br>
+          <input type="checkbox" id="autokategorija"> TR2 (traktortehnika)
+          <input type="checkbox" id="autokategorija"> TR3 (traktortehnika) 
+          <input type="checkbox" id="autokategorija"> TR4 KAT (traktortehnika)
+          <br><br>
+          <input type="submit" value="Saglabāt" class="starppoga"> 
+        </form>
+      </div>
+
+
+        <br><br>
+
+        <div id="">
+          <form id="sertifikats">
+            <label for="name"> <i> Pievienojiet informāciju par licenci vai sertifikātu: </i> </label> 
+            <br> <br><!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="Sertifikāts vai Licence"  autocomplete="off" >
+            <br> <br>
+            <!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="ID numurs vai saite "  autocomplete="off" >
+          
+            <br> <br>
+            <input type="text" id="name" name="name" placeholder="Izdevējs"  autocomplete="off">
+            <br> <br>
+            <input type="text" id="name" name="name" placeholder="gads"  autocomplete="off">
+            <br><br>
+            <input type="submit" value="Saglabāt" class="starppoga">
+          </form>
+      
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <p> Pievienot dokumentu: </p>
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+          
+        </form>
+      
+
+      <p> <button onclick="PievienotSertifikats1()"> + Pievienot sertifikātu </button> </p> <script src="PievienotSertifikats1.js"></script>
+          <div id="sertifikats1" value="sertifikats1">
+            <label for="name"> <i> Pievienojiet informāciju par licenci vai sertifikātu: </i> </label> 
+            <br> <br><!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="Sertifikāts vai Licence"  autocomplete="off" >
+            <br> <br>
+            <!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="ID numurs vai saite "  autocomplete="off" >
+          
+            <br> <br>
+            <input type="text" id="name" name="name" placeholder="Izdevējs"  autocomplete="off">
+            <br> <br>
+            <input type="text" id="name" name="name" placeholder="gads"  autocomplete="off">
+            
+            <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+          </form>
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+        <p> Pievienot dokumentu:</p>
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+          
+        </form>
+        </div>
+
+        <p> <button onclick="PievienotSertifikats2()"> + Pievienot sertifikātu </button> </p> <script src="PievienotSertifikats2.js"></script>
+          <div id="sertifikats2" value="sertifikats2">
+            <label for="name"> <i> Pievienojiet informāciju par licenci vai sertifikātu: </i> </label> 
+            <br> <br><!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="Sertifikāts vai Licence"  autocomplete="off" >
+            <br> <br>
+            <!-- Lauka nosaukums -->
+            <input type="text" id="name" name="name" placeholder="ID numurs vai saite "  autocomplete="off" >
+          
+            
+            <br> <br>
+            <input type="text" id="name" name="name" placeholder="gads"  autocomplete="off">
+            
+            <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+          </form>
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+        <p>Pievienot dokumentu:</p>
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+          
+        </form>
+        </div>
+
+      <br>
+      <br>
+
+
+<a class="pogaatpakal" href="Darbs.html" target="_blanc"> Atpakaļ </a>
+    <a class="pogatalak" href="Valodas.html" target="_blanc"> Tālāk </a>
+
+<footer>
+      <p>
+      <div>
+      <p>
+        <img src="LatvijasPastsLogo.png" class="LatvijasPastsLogo" width="200px" title="&copy VAS Latvijas Pasts">
+        </div>       
+    </p>
+    <p class="PastsAdrese"> VAS "Latvijas Pasts"
+      <br> Ziemeļu iela 10, Lidosta Rīga, Mārupes novads, LV-1000, Latvija
+    </p>
+
+    </footer>
+    <footer>
+      <p>Mājaslapas izstrāde:
+        <a href="https://www.linkedin.com/in/jurgis-sterns-240453184/" target ="_new">Jurgis Sterns</a>
+      </p>
+    </footer>
+  
+  </body>
+</html>

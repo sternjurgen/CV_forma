@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> CV iesniegšanas forma || Pamatdati</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+    <nav>
+    <script src="datums.js"></script>
+    <script src="DatumsVardiem.js"></script>
+  </nav>
+  <body>
+    <p class="virsrakstsh2"> <i> <b>CURRICULUM VITAE
+      <br> IESNIEGŠANAS FORMA</b></i></p>
+    <p class="virsrakstsh2"> <i>Lūdzu norādiet nepieciešamo informāciju! </i> </p>
+    
+      <form id="forma1" >
+      <p> <b> IZGLĪTĪBA </b> </p>
+      <label for="text"> Izglītības iestāde: </label>
+      <br>
+      <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Mācību iestādes nosaukums" required></textarea>
+      
+      <br><br>
+      <label for="text"> Fakultāte: </label> <br>
+      <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Fakultātes nosaukums" required></textarea>
+
+      <br><br>
+      <label for="text"> Studiju virziens: </label> <br>
+      <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="studiju virziena nosaukums" required></textarea>
+
+      <br><br>
+      <label for="izvele"> Izglītības līmenis: </label><br>
+      <select name="izvele" id="izvele">
+        <!-- Izvēles elementu grupēšana -->
+        <optgroup label="Izvēlēties">
+          <!-- Izvēles elementi/varianti -->
+          <option value="nav norādīts"> [nav norādīts] </option>
+          <option value="Bakalaurs"> Bakalaurs </option>
+          <option value="Maģistrs"> Maģistrantūra</option>
+          <option value="Doktarantūra"> Doktorantūra</option>
+        </optgroup>
+        </select> 
+        
+        <br><br>
+        <label for="izvele"> Mācību statuss: </label><br>
+      <select name="izvele" id="izvele">
+        <!-- Izvēles elementu grupēšana -->
+        <optgroup label="Izvēlēties">
+          <!-- Izvēles elementi/varianti -->
+          <option value="nav norādīts"> [nav norādīts] </option>
+          <option value="mācās"> mācos </option>
+          <option value="pārtraukts"> mācības pārtrauktas </option>
+          <option value="pabeigts"> mācības pabeigtas </option>
+        </optgroup>
+        </select>
+
+        <br> <br>
+        <label for="text">Mācībās pavadītais laiks:</label> <!-- Lauka nosaukums -->
+        <br>
+      <!--Datuma un laika ievade -->
+      <label for="date">no:</label> 
+      <input type="date" id="date" name="date">
+      <label for="date">līdz:</label> 
+      <input type="date" id="date" name="date">
+
+      <br><br>
+
+      <input type="submit" value="Saglabāt" class="starppoga">
+      </form>
+      <br><br>
+
+
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+            <!-- Formas iztīrīšana ar JS -->
+            <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+        </form>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+            <!-- Formas iztīrīšana ar JS -->
+            <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+        </form>
+        <br>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" name="submit" value="Augšupielādēt">
+            <!-- formas iztīrīšana ar HTML5 -->
+            <input type="reset" value="Nodzēst pielikumu (HTML5)">
+            <!-- Formas iztīrīšana ar JS -->
+            <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+        </form>
+
+        
+        <br>
+
+        <p> <button onclick="PievienoIzglitibu()"> + Pievienot izglītību</button> </p>
+          <script src="PievienotIzglitiba1.js"></script>
+          <div id="izglitiba1" value="izglitiba1">
+            <form id="forma_izglitiba">
+              <br>
+              <label for="text"> Izglītības iestāde: </label>
+              <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Mācību iestādes nosaukums"></textarea>
+              
+              <br><br>
+              <label for="text"> Fakultāte: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Fakultātes nosaukums"></textarea>
+
+              <br><br>
+              <label for="text"> Studiju virziens: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="studiju virziena nosaukums" ></textarea>
+
+              <br><br>
+              <label for="izvele"> Izglītības līmenis: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="Bakalaurs"> Bakalaurs </option>
+                  <option value="Maģistrs"> Maģistrantūra</option>
+                  <option value="Doktarantūra"> Doktorantūra</option>
+                </optgroup>
+                </select> 
+                
+                <br><br>
+                <label for="izvele"> Mācību statuss: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="mācās"> mācos </option>
+                  <option value="pārtraukts"> mācības pārtrauktas </option>
+                  <option value="pabeigts"> mācības pabeigtas </option>
+                </optgroup>
+                </select>
+
+                <br> <br>
+                <label for="text">Mācībās pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+
+              <br><br>
+
+              <input type="submit" value="Saglabāt" class="starppoga">
+              <br>
+              <br>
+            </form>
+          
+
+
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+          </div>
+          
+
+          <p> <button onclick="PievienoIzglitibu2()"> + Pievienot izglītību</button> </p>
+          <script src="PievienotIzglitibu2.js"></script>
+          <div id="izglitiba2" value="izglitiba2">
+            <form id="forma_izglitiba2">
+              <br>
+              <label for="text"> Izglītības iestāde: </label>
+              <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Mācību iestādes nosaukums"></textarea>
+              
+              <br><br>
+              <label for="text"> Fakultāte: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Fakultātes nosaukums"></textarea>
+
+              <br><br>
+              <label for="text"> Studiju virziens: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="studiju virziena nosaukums"></textarea>
+
+              <br><br>
+              <label for="izvele"> Izglītības līmenis: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="Bakalaurs"> Bakalaurs </option>
+                  <option value="Maģistrs"> Maģistrantūra</option>
+                  <option value="Doktarantūra"> Doktorantūra</option>
+                </optgroup>
+                </select> 
+                
+                <br><br>
+                <label for="izvele"> Mācību statuss: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="mācās"> mācos </option>
+                  <option value="pārtraukts"> mācības pārtrauktas </option>
+                  <option value="pabeigts"> mācības pabeigtas </option>
+                </optgroup>
+                </select>
+
+                <br> <br>
+                <label for="text">Mācībās pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+
+              <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+
+              <br>
+              <br>
+            </form>
+          
+
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+          </div>
+
+
+          <p> <button onclick="PievienoIzglitibu3()"> + Pievienot izglītību</button> </p>
+          <script src="PievienotIzglitibu3.js"></script>
+          <div id="izglitiba3" value="izglitiba3">
+            <form id="forma_izglitiba2">
+              <br>
+              <label for="text"> Izglītības iestāde: </label>
+              <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Mācību iestādes nosaukums"></textarea>
+              
+              <br><br>
+              <label for="text"> Fakultāte: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="Fakultātes nosaukums"></textarea>
+
+              <br><br>
+              <label for="text"> Studiju virziens: </label> <br>
+              <textarea id="text" name="text" rows="2" cols="20" minlength="10" maxlength="40" autocomplete="off" placeholder="studiju virziena nosaukums"></textarea>
+
+              <br><br>
+              <label for="izvele"> Izglītības līmenis: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="Bakalaurs"> Bakalaurs </option>
+                  <option value="Maģistrs"> Maģistrantūra</option>
+                  <option value="Doktarantūra"> Doktorantūra</option>
+                </optgroup>
+                </select> 
+                
+                <br><br>
+                <label for="izvele"> Mācību statuss: </label><br>
+              <select name="izvele" id="izvele">
+                <!-- Izvēles elementu grupēšana -->
+                <optgroup label="Izvēlēties">
+                  <!-- Izvēles elementi/varianti -->
+                  <option value="nav norādīts"> [nav norādīts] </option>
+                  <option value="mācās"> mācos </option>
+                  <option value="pārtraukts"> mācības pārtrauktas </option>
+                  <option value="pabeigts"> mācības pabeigtas </option>
+                </optgroup>
+                </select>
+
+                <br> <br>
+                <label for="text">Mācībās pavadītais laiks:</label> <!-- Lauka nosaukums -->
+                <br>
+              <!--Datuma un laika ievade -->
+              <label for="date">no:</label> 
+              <input type="date" id="date" name="date">
+              <label for="date">līdz:</label> 
+              <input type="date" id="date" name="date">
+
+              <br><br>
+              <input type="submit" value="Saglabāt" class="starppoga">
+              
+
+              
+              <br>
+              <br>
+            </form>
+          
+
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+            <br>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" name="submit" value="Augšupielādēt">
+                <!-- formas iztīrīšana ar HTML5 -->
+                <input type="reset" value="Nodzēst pielikumu (HTML5)">
+                <!-- Formas iztīrīšana ar JS -->
+                <!--<input type="button" value="Iztīrīt ar JS" onclick="iztiritFormu()"> -->
+            </form>
+          </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Formas iztīrīšana ar JS -->
+      <!--<input type="button" value="Iztīrīt ar JavaScript" onclick="iztiritFormu()"> -->
+
+
+
+      <!--Elementa krāsas maiņas poga-->
+      <!--<input type="button" value="Mainīt krāsu" onclick="mainitKrasu()"> -->
+       
+
+
+      <!--Visu lauku satura izvade--> <!--HTML lapā kur ielikts, ievietot Script.js failu pēc form beigām <p id=demo></p> katram js failam kas apskatīts JavaScript failā
+      
+      
+      -->
+      <!--<input type="button" value="Izvadīt laukus" onclick="lauki()">
+      <!--Izvadīt Vārda lauka izvadītos datus-->
+      <!--<input type="button" value="Vārda lauka izvade" onclick="vards()">
+      <script src="..."></script> -->
+
+      <!--<input type="button" value="Izvadīt laukus" onclick="">
+      <!--Izvadīt Vārda lauka izvadītos datus-->
+      <br>
+      <br>
+      <a class="pogaatpakal" href="pamatdati.html" target="_blanc"> Atpakaļ </a>
+
+      <a class="pogatalak" href="Darbs.html" target="_blanc"> Tālāk </a>
+      
+      <!-- <br> <br>
+      <!--Iesniegšanas poga-->
+      <!--<input type="submit" value="Iesniegt formu"> -->
+
+
+      <!-- Drošības lauki saucas "captcha" -->
+      
+
+
+    <br><br>
+
+    <footer>
+      <p>
+      <div>
+      <p>
+        <img src="LatvijasPastsLogo.png" class="LatvijasPastsLogo" width="200px" title="&copy VAS Latvijas Pasts">
+        </div>       
+    </p>
+    <p class="PastsAdrese"> VAS "Latvijas Pasts"
+      <br> Ziemeļu iela 10, Lidosta Rīga, Mārupes novads, LV-1000, Latvija
+    </p>
+
+    </footer>
+    <footer>
+      <p>Mājaslapas izstrāde:
+        <a href="https://www.linkedin.com/in/jurgis-sterns-240453184/" target ="_new">Jurgis Sterns</a>
+      </p>
+    </footer>
+
+  </body>
+
+
+
+
+</html>

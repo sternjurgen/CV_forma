@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> CV iesniegšanas forma || Pamatdati</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+    <nav>
+    <script src="datums.js"></script>
+    <script src="DatumsVardiem.js"></script>
+  </nav>
+  <body>
+    <p class="virsrakstsh2"> <i> <b>CURRICULUM VITAE
+      <br> IESNIEGŠANAS FORMA</b></i></p>
+    <p class="virsrakstsh2"> <i>Lūdzu norādiet nepieciešamo informāciju! </i> </p>
+    
+      <form id="forma1">
+        <p> <b>KONTAKTINFORMĀCIJA</b> </p>
+        <!-- Teksta ievades lauks -->
+        <label for="name"></label> <!-- Lauka nosaukums -->
+        <input type="text" id="vards" name="name" placeholder="Jūsu Vārds" required autocomplete="off">
+        <br>
+        <br>
+        <!-- Teksta ievades lauks -->
+        <label for="name"></label> <!-- Lauka nosaukums -->
+        <input type="text" id="uzvards" name="name"  placeholder="Jūsu Uzvārds" required autocomplete="off">
+        <br>
+        <br>
+        
+        <!-- Epasta lauks -->
+        <label for="email"></label>
+        <input type="email" id="epasts" name="email" placeholder="Jūsu e-pasts" required>
+        <br>
+        <br>
+
+        <label for="kods"></label>
+        <select name="izvele" id="izvele">
+          <!-- Izvēles elementu grupēšana -->
+          <optgroup label="valsts kods">
+            <!-- Izvēles elementi/varianti -->
+            <option value="nav norādīts" selected > [nav noradīts] </option>
+            <option value="LT00370"> +370 (Lietuva)</option>
+            <option value="LV00371"> +371 (Latvija)</option>
+            <option value="EE00372"> +372 (Igaunija)</option>
+          </optgroup>
+          </select> 
+
+        <label for="phone"></label>
+        <input type="tel" id="phone" name="phone" placeholder="Jūsu tālrunis" autocomplete="off" required pattern="[1-9]{1}-[0-9]{4}-[0-9]{3}">
+
+        <br><br>
+        <input type="submit" value="Saglabāt" class="starppoga">
+      </form>
+
+      <br><br>
+
+      <a class="pogaatpakal" href="index.html" target="_blanc"> Atpakaļ </a>
+
+      <a class="pogatalak" href="Izglitiba.html" target="_blanc"> Tālāk </a>
+    
+    <br><br>
+
+    <footer>
+      <p>
+      <div>
+      <p>
+        <img src="LatvijasPastsLogo.png" class="LatvijasPastsLogo" width="200px" title="&copy VAS Latvijas Pasts">
+        </div>       
+    </p>
+    <p class="PastsAdrese"> VAS "Latvijas Pasts"
+      <br> Ziemeļu iela 10, Lidosta Rīga, Mārupes novads, LV-1000, Latvija
+    </p>
+
+    </footer>
+    <footer>
+      <p>Mājaslapas izstrāde:
+        <a href="https://www.linkedin.com/in/jurgis-sterns-240453184/" target ="_new">Jurgis Sterns</a>
+      </p>
+    </footer>
+
+  </body>
+
+</html>
